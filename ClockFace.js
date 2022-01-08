@@ -5,7 +5,7 @@
 
     g.setColor(Settings.Foreground === 'Theme' ? Theme.fg : Settings.Foreground || '#000000');
 
-    let withDots = Setings.withDots;
+    let withDots = Settings.withDots;
     if (withDots) {
       for (let i = 0; i < 60; i++) {
         let Phi = i * twoPi/60;
