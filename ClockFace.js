@@ -20,7 +20,7 @@
     g.setFont('Vector', 22);
     g.setFontAlign(0,0);
 
-    let innerRadius = (withDots ? outerRadius * 0.9 - 10 : outerRadius);
+    let innerRadius = (withDots ? outerRadius * 0.9 : outerRadius) - 10;
     for (let i = 0; i < 12; i++) {
       let Phi = i * twoPi/12;
 
