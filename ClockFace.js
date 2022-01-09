@@ -22,7 +22,8 @@
 
     let innerRadius = (withDots ? outerRadius * 0.9 : outerRadius) - 10;
     for (let i = 0; i < 12; i++) {
-      let Phi = i * twoPi/12;
+      let Phi    = i * twoPi/12;
+      let Radius = (i == 10) || (i == 12) ? innerRadius - 4 : innerRadius;
 
       let x = CenterX + innerRadius * sin(Phi);
       let y = CenterY - innerRadius * cos(Phi);
