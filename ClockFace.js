@@ -3,7 +3,7 @@
     let sin = Math.sin, cos = Math.cos;
     let twoPi = 2*Math.PI;
 
-    g.setColor(Settings.Foreground === 'Theme' ? Theme.fg : Settings.Foreground || '#000000');
+    g.setColor(Settings.Foreground === 'Theme' ? g.theme.fg : Settings.Foreground || '#000000');
 
     let withDots = Settings.withDots;
     if (withDots) {
