@@ -7,6 +7,8 @@
 
     let withDots = Settings.withDots;
     if (withDots) {
+      outerRadius -= 4;
+
       for (let i = 0; i < 60; i++) {
         let Phi = i * twoPi/60;
 
@@ -17,16 +19,15 @@
       }
     }
 
-    g.setFont('Vector', 22);
+    g.setFont('Vector', 20);
     g.setFontAlign(0,0);
 
     let innerRadius = (withDots ? outerRadius * 0.9 : outerRadius) - 10;
     for (let i = 0; i < 12; i++) {
-      let Phi    = i * twoPi/12;
-      let Radius = (i == 10) || (i == 12) ? innerRadius - 4 : innerRadius;
+      let Phi = i * twoPi/12;
 
-      let x = CenterX + innerRadius * sin(Phi);
-      let y = CenterY - innerRadius * cos(Phi);
+      let x = CenterX + innerRadius * sin(Phi) + (i >= 10 ? 6 : 2);
+      let y = CenterY - innerRadius * cos(Phi) + 2;
 
       g.drawString(i == 0 ? '12' : '' + i, x,y);
     }
