@@ -1,4 +1,4 @@
-(function () {
+;(function () {
   exports.draw = function draw (Settings, CenterX, CenterY, outerRadius) {
     let sin = Math.sin, cos = Math.cos;
     let twoPi = 2*Math.PI;
