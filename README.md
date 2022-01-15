@@ -2,6 +2,8 @@
 
 a simple clock face with numbers 1...12 for analog clocks on a Bangle.js 2
 
+> **Important Note: this module has been renamed to [banglejs-2-twelve-numbered-clock-face](https://github.com/rozek/banglejs-2-twelve-numbered-clock-face). Please do no longer use this repository but switch to the new one instead!**
+
 This module draws a face with the numbers 1-12 (optionally surrounded by dots for every minute) for an analog clock running on a [Bangle.js 2](https://www.espruino.com/Bangle.js2).
 
 <table>
