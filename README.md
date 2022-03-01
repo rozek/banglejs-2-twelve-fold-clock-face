@@ -17,7 +17,7 @@ This module draws a face with the numbers 1-12 (optionally surrounded by dots fo
 
 Within a clock implementation, the module may be used as follows:
 
-```
+```javascript
 let Clockwork = require(...);
 Clockwork.windUp({
   face:require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-fold-clock-face/main/ClockFace.js'),
@@ -31,7 +31,7 @@ Clockwork.windUp({
 
 The following code shows a complete example for a (still simple) analog clock using this clock face:
 
-```
+```javascript
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
 
 Clockwork.windUp({
